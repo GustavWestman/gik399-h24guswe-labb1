@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Slutsats: 
+ 1. Placeringen av <script> taggen påverkar när scripten körs. Om man lägger den i head kan man få problem med att html koden inte har laddats klart när scriptet körs. 
+    Genom att placera scriptet längst ner i body kan man säkerställa att html har laddats först vilket undviker sådana problem.
+ 2. Defer attributet används när man vill ladda Java-scripten samtidigt som html koden. Genom att använda defer kan man undvika att scriptet blockerar html rendering 
+    och gör att scriptet körs efter att html koden har laddats klart. -->
